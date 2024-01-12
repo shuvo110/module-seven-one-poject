@@ -1,0 +1,262 @@
+*{
+    padding: 0px ;
+    margin: 0px;
+    /* max-width: 1400px;
+    margin: 0px auto; */
+}
+
+/* heder code start  */
+header{
+    background-image: url(img/Snapseed/16.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:100vh;
+
+}
+
+.prent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 60%;
+    margin: 50px auto;
+    grid-gap: 5px 5px;
+    border: 1px solid ;
+    /* padding: 10px; */
+}
+.one{
+    border: 2px solid red;
+    padding: 50px 10px;
+    font-size: 40px;
+
+}
+.one:nth-child(1){
+    background-color: rebeccapurple;
+    grid-column:span 2 ;
+    grid-row:span 4;
+}
+.one:nth-child(2){
+    background-color: rgb(133, 36, 230);
+    grid-column:span 2 ;
+}
+.one:nth-child(3){
+    background-color: rgb(74, 247, 31);
+    grid-row:span 3 ;
+}
+.one:nth-child(4){
+    background-color: rgb(230, 75, 36);
+    grid-row:span 3;
+}
+
+/* 2nd code start */
+.card{
+    width:60%;
+    margin:20px auto;
+
+}
+.card .one-card {
+    display: flex;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-bottom:30px ;
+    width: 100%;
+    border: 1px solid red;
+}
+.card .one-card .photo{
+    object-fit: cover;
+    width: 100%;
+
+}
+.card .one-card .photo img{
+    vertical-align:middle;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.card .one-card .txt{
+    text-align: center;
+    margin: 0px 30px;
+}
+.card .one-card .txt h2{
+    padding: 10px 0px;
+    font-size: 30px;
+    font-style: italic;
+}
+.card .one-card .txt .btn{
+    display: block;
+    padding: 8px 20px;
+    border: none;
+    margin: 8px auto 0px auto;
+    border-radius: 10px;
+    background-color:aqua;
+}
+
+/* 3rd section code start  */
+.prent-div{
+    width: 60%;
+    background-color: rgba(165, 42, 42, 0.26);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.prent-div .img-text{
+    display: flex;
+    justify-content: center;
+    gap:10px ;
+    margin-bottom: 20px;
+    background-color: rebeccapurple;
+}
+.img-photo{
+    width:180em;
+}
+.img-photo img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.p-text{
+   padding: 10px 20px;
+
+}
+
+ /* pre */
+.prent-div .sh{
+    display: flex;
+    justify-content: center;
+    gap:10px ;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 255, 0.342);
+}
+.img-photo{
+    width:180em;
+}
+.img-photo img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.p-text{
+   padding: 10px 20px;
+
+}
+
+
+/* Small phone Responsive */
+
+@media screen and (max-width:576px){
+    .prent{
+        grid-template-columns: repeat(1,1fr);
+        width:90%;
+    }
+    .one:nth-child(4){
+        background-color: rgb(230, 75, 36);
+        grid-column:span 2;
+    }
+
+    header{
+        background-image:linear-gradient(#2b151500, #0000004b), url(img/Snapseed/16.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center center;
+        height:100vh;
+        width:100%;
+    }
+
+    /* 2nd code start  */
+    .card{
+        width:90%;
+        margin:20px auto;
+    
+    }
+    .card .one-card {
+        flex-direction: column;
+    }
+    .card .one-card .txt p{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(116, 221, 55);
+    }
+
+    /* 3rd section code start  */
+    .prent-div{
+        width:100%;
+    }
+
+    .img-photo{
+        width:100%;
+    }
+    .img-photo img{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .prent-div .img-text{
+        flex-direction: column;
+    }
+    
+    /* pre */
+    .prent-div .sh{
+        flex-direction:column-reverse;
+        background-color: red;
+    }
+}
+
+
+/* Medium phone Responsive */
+@media screen and (min-width:577px) and (max-width:768px) {
+    .prent{
+        grid-template-columns: repeat(1,1fr);
+        width:70%;
+    }
+    .one:nth-child(4){
+        background-color: rgb(230, 75, 36);
+        grid-column:span 2;
+    }
+    header{
+        background-image:linear-gradient(#2b151500, #0000004b), url(img/Snapseed/16.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        height:100vh;
+        width:100%;
+    }
+    /* 2nd code start */
+    .card{
+        width:90%;
+        margin:20px auto;
+    
+    }
+    .card .one-card {
+        flex-direction: column;
+    }
+    .card .one-card .txt p{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(116, 221, 55);
+    }
+
+        /* 3rd section code start  */
+        .prent-div{
+            width:100%;
+        }
+    
+        .img-photo{
+            width:100%;
+        }
+        .img-photo img{
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .prent-div .img-text{
+            flex-direction: column;
+        }
+        
+        /* pre */
+        .prent-div .sh{
+            flex-direction:column-reverse;
+            background-color: red;
+        }
+}
+
